@@ -1,4 +1,6 @@
 
+#1 Technical Report
+
 
 The objective of this project was to implement a **Retrieval-Augmented Generation (RAG)** chatbot that can answer user questions based on the content of the Promtior website. The solution leverages LangChain's modular architecture for orchestrating the pipeline, using web scraping, text chunking, semantic search via vector databases, and generative models to return accurate answers. The deployment was made accessible via a Streamlit interface and monitored with LangSmith.
 
