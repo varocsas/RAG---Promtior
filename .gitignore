@@ -1,0 +1,8 @@
+.history/
+.__pycache__/
+__pycache__/
+TomBotLocal/
+.DS_Store
+backups/
+RAG--Promtior-venv/
+.vscode

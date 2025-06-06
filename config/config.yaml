@@ -1,0 +1,8 @@
+
+rails:  # Guardrails configuration
+  input:
+    flows:
+      - self check input
+
+
+# TODO add a self check output task

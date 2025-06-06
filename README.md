@@ -1,21 +1,37 @@
-# RAG---Promtior
-A Retrieval-Augmented Generation (RAG) pipeline for answering questions based on website content. This project combines retrieval of relevant website information with generative models to deliver contextually accurate answers.
+# Running this example 
+
+```sh
+
+
+python -m venv WebRagPromtior-venv
+source WebRagPromtior/bin/activate
+pip install -r requirements.txt
+streamlit run app.py
+
+
+```
+
+# Credits
+
+
+Initially a simple Retrieval-Augmented Generation (RAG) pipeline for answering questions based on website content, it is now a template of sorts for a reasonable elegant choreagraphy of state-of-the-art hosts and API provierds.
 
 ## Features
 
-- **Website Content Parsing**: Extracts and indexes content from a specified website URL.
-- **Retrieval-Augmented Generation (RAG)**: Uses a hybrid approach for question answering.
+- **Data retrieval, embedding, and storage**: Scrapes, processes and embeds contextual information from multiple potential formats-
+- **Retrieval-Augmented Generation (RAG)**: Uses a hybrid approach for question answering with tokenizing, embedding, and chunking.
 - **Streamlit Interface**: User-friendly web interface for inputting URLs and questions.
 
 ## Tools
 
-- **Orchestration**: LangChain
-- **Guardrails**: NeMo-Guardrails
-- **Monitoring**: Langsmith
-- **Retrieval**: Hugging Face
-- **Vector Database**: Pinecone
-- **Generation**: Groq, Llama3
-- **Deployment**: Render
+- **Orchestration (chaining different APIs and providers)**: LangChain
+- **Guardrails (security)**: NeMo-Guardrails
+- **Monitoring (to migrate from dev to prod)**: Langsmith
+- **Retrieval (querying)**: Hugging Face
+- **Vector Database (storage)**: Pinecone
+- **Generation (LLM)**: Groq, Llama3
+- **Deployment (may run locally or be deployed to Render)**
+- **
 
 ## Workflow Architecture
 
@@ -51,4 +67,3 @@ A Retrieval-Augmented Generation (RAG) pipeline for answering questions based on
 1. Enter a Website URL in the sidebar.
 2. Ask Questions based on the website content.
 3. The RAG pipeline retrieves relevant information and generates answers.
-
