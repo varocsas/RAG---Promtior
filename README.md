@@ -2,19 +2,14 @@
 
 ```sh
 
-
-python -m venv WebRagPromtior-venv
-source WebRagPromtior/bin/activate
+git clone git@github.com:varocsas/RAG--Promtior.git
+python -m venv RAG--Promtior-venv
+source RAG--Promtior-venv/bin/activate
 pip install -r requirements.txt
 streamlit run app.py
 
 
 ```
-
-# Credits
-
-
-Initially a simple Retrieval-Augmented Generation (RAG) pipeline for answering questions based on website content, it is now a template of sorts for a reasonable elegant choreagraphy of state-of-the-art hosts and API provierds.
 
 ## Features
 
@@ -64,6 +59,9 @@ Initially a simple Retrieval-Augmented Generation (RAG) pipeline for answering q
   streamlit run app.py
 
 ## Usage
-1. Enter a Website URL in the sidebar.
-2. Ask Questions based on the website content.
-3. The RAG pipeline retrieves relevant information and generates answers.
+1. Press RunChallenge to answer the challenge questions using Promtior website and the provided PDF file
+2. The RAG pipeline retrieves relevant information and generates the answers.
+ --
+3. To create a new context based on anoter URL or PDF file just type de information in the URL textBox. Previous context will be deleted and a new one will replace it.
+4. Ask Questions based on the website content.
+5. The RAG pipeline retrieves relevant information and generates answers.
