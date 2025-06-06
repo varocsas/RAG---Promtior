@@ -3,18 +3,7 @@
 https://rag-promtior.onrender.com
 
 
-# To run the solution locally
 
-```sh
-
-git clone git@github.com:varocsas/RAG--Promtior.git
-python -m venv RAG--Promtior-venv
-source RAG--Promtior-venv/bin/activate
-pip install -r requirements.txt
-streamlit run app.py
-
-
-```
 
 ## Features
 
@@ -46,22 +35,17 @@ streamlit run app.py
 9. **Monitoring**: Langsmith monitors responses to ensure output quality.
 10. **Output**: The final answer is presented to the user.
 
+# To run the solution locally
 
-## Getting Started
+```sh
 
-### Prerequisites
+git clone git@github.com:varocsas/RAG--Promtior.git
+python -m venv RAG--Promtior-venv
+source RAG--Promtior-venv/bin/activate
+pip install -r requirements.txt
+streamlit run app.py
 
-- **Python 3.9+**
-  
-### Run 
-
-- Install dependencies:
-  ```bash
-  pip install -r requirements.txt
-
-- Start the app
-  ```bash
-  streamlit run app.py
+```
 
 ## Usage
 1. Press RunChallenge to answer the challenge questions using Promtior website and the provided PDF file
